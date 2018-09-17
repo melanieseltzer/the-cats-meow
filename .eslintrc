@@ -1,0 +1,19 @@
+{
+  "extends": "react-app",
+  "plugins": [
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "arrowParens": "avoid",
+        "bracketSpacing": true,
+        "semi": true,
+        "singleQuote": true,
+        "trailingComma": "none",
+        "useTabs": false
+      }
+    ]
+  }
+}
