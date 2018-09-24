@@ -1,5 +1,11 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+  background: #F0F3F7;
+}
+
+.App {
+  margin-bottom: 5rem;
+}
+
+#root {
+  height: 100%;
 }

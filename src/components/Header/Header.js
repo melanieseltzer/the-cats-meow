@@ -9,7 +9,7 @@ export default class Header extends Component {
   render() {
     return (
       <Hero color="primary" size="large">
-        <Hero.Body>
+        <Hero.Body className="main-hero">
           <Container>
             <div className="hero-image">
               <Link to="/">

@@ -7,8 +7,6 @@ import Header from '../Header';
 import Posts from '../Posts';
 import Post from '../Post';
 
-import './App.css';
-
 const client = new ApolloClient({
   uri: 'https://api-uswest.graphcms.com/v1/cjlp8i8240jy601gpcvnn1tn2/master'
 });

@@ -4,7 +4,7 @@
   text-align: center;
 }
 
-.hero.is-large .hero-body {
+.hero.is-large .hero-body.main-hero {
   padding-bottom: 13rem;
   padding-top: 3rem;
 }
