@@ -3,6 +3,7 @@ import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from 'react-apollo';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
+import Header from '../Header';
 import Posts from '../Posts';
 import Post from '../Post';
 
@@ -18,6 +19,7 @@ class App extends Component {
       <ApolloProvider client={client}>
         <Router>
           <div className="App">
+            <Header />
             <Switch>
               <Route exact path="/" component={Posts} />
               <Route path="/post/:id" component={Post} />
