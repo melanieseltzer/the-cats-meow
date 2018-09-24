@@ -7,6 +7,8 @@
 
 This is a silly blog for my cat, Callie. It uses GraphCMS for the backend and Apollo Client for the GraphQL client.
 
+https://the-cats-meow.netlify.com/
+
 ## Local Development 🚀
 
 Clone the repo and then:
