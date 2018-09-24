@@ -11,24 +11,24 @@ export default class Post extends Component {
   render() {
     const { match } = this.props;
     return (
-      <Container className="posts-container">
-        <Query query={POST_QUERY} variables={{ id: match.params.id }}>
-          {({ data, loading }) => {
-            const { post } = data;
+      <Query query={POST_QUERY} variables={{ id: match.params.id }}>
+        {({ data, loading }) => {
+          const { post } = data;
 
-            if (loading)
-              return (
-                <div className="loading">
-                  <Loader
-                    type="Ball-Triangle"
-                    color="#ff3860"
-                    height="80"
-                    width="80"
-                  />
-                </div>
-              );
-
+          if (loading)
             return (
+              <div className="loading">
+                <Loader
+                  type="Ball-Triangle"
+                  color="#ff3860"
+                  height="80"
+                  width="80"
+                />
+              </div>
+            );
+
+          return (
+            <Container className="posts-container">
               <Content className="post" key={post.id}>
                 <img
                   className="post-image"
@@ -43,10 +43,10 @@ export default class Post extends Component {
                 </Heading>
                 <p>{post.body}</p>
               </Content>
-            );
-          }}
-        </Query>
-      </Container>
+            </Container>
+          );
+        }}
+      </Query>
     );
   }
 }
