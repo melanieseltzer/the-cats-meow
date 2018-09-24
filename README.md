@@ -1,3 +1,5 @@
+<img src="https://github.com/melanieseltzer/the-cats-meow/blob/master/screenshot.png" width="300" alt="The Cat's Meow" />
+
 # The Cat's Meow
 [![dependencies Status](https://david-dm.org/melanieseltzer/the-cats-meow/status.svg)](https://david-dm.org/melanieseltzer/the-cats-meow) [![devDependencies Status](https://david-dm.org/melanieseltzer/the-cats-meow/dev-status.svg)](https://david-dm.org/melanieseltzer/the-cats-meow?type=dev)
 
