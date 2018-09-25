@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Query } from 'react-apollo';
+import Markdown from 'react-markdown';
 import gql from 'graphql-tag';
 import { Container, Content, Heading } from 'react-bulma-components/full';
 import format from 'date-fns/format';
@@ -41,7 +42,7 @@ export default class Post extends Component {
                 <Heading subtitle size={6} renderAs="h3" className="posted">
                   Posted on {format(post.createdAt, ['dd MMMM yyyy'])}
                 </Heading>
-                <p>{post.body}</p>
+                <Markdown source={post.body} />
               </Content>
             </Container>
           );
