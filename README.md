@@ -1,13 +1,13 @@
-<img src="https://github.com/melanieseltzer/the-cats-meow/blob/master/screenshot.png" width="300" alt="The Cat's Meow" />
+<p align="center"><img src="https://github.com/melanieseltzer/the-cats-meow/blob/master/screenshot.png" width="300" alt="The Cat's Meow" /></p>
 
 # The Cat's Meow
 [![dependencies Status](https://david-dm.org/melanieseltzer/the-cats-meow/status.svg)](https://david-dm.org/melanieseltzer/the-cats-meow) [![devDependencies Status](https://david-dm.org/melanieseltzer/the-cats-meow/dev-status.svg)](https://david-dm.org/melanieseltzer/the-cats-meow?type=dev)
 
 > Meow. I have a lot to say! 😼
 
-This is a silly blog for my cat, Callie. It uses GraphCMS for the backend and Apollo Client for the GraphQL client.
+This is a silly blog for my cat, Callie 😆 It is built using React for the front end, and GraphCMS for the content. Apollo Client is used as the GraphQL client.
 
-https://the-cats-meow.netlify.com/
+Behold ✨ https://the-cats-meow.netlify.com/
 
 ## Local Development 🚀
 
