@@ -122,7 +122,7 @@ export default class Posts extends Component {
 
 const POSTS_QUERY = gql`
   query allPosts($skip: Int) {
-    posts(orderBy: createdAt_DESC, first: 3, skip: $skip) {
+    posts(where: { status: PUBLISHED }, orderBy: createdAt_DESC, first: 3, skip: $skip) {
       createdAt
       id
       title
