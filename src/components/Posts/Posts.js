@@ -45,17 +45,23 @@ export default class Posts extends Component {
             <Fragment>
               <Container className="posts-container">
                 {posts.map(post => {
+                  const { id, title, body, createdAt, featuredImage } = post;
+
                   return (
-                    <Link to={`/post/${post.id}`} key={post.id}>
+                    <Link to={`/post/${id}`} key={id}>
                       <Content>
-                        <img
-                          className="post-image"
-                          src={post.featuredImage.url}
-                          alt={post.featuredImage.fileName}
-                        />
+                        {featuredImage ? (
+                          <img
+                            className="post-image"
+                            src={featuredImage.url}
+                            alt={featuredImage.fileName}
+                          />
+                        ) : (
+                          ''
+                        )}
 
                         <Heading renderAs="h2" size={3}>
-                          {post.title}
+                          {title}
                         </Heading>
                         <Heading
                           subtitle
@@ -63,9 +69,9 @@ export default class Posts extends Component {
                           renderAs="h3"
                           className="posted"
                         >
-                          Posted on {format(post.createdAt, ['dd MMMM yyyy'])}
+                          Posted on {format(createdAt, ['dd MMMM yyyy'])}
                         </Heading>
-                        <p className="content-body-clip">{post.body}</p>
+                        <p className="content-body-clip">{body}</p>
 
                         <Button color="danger" rounded={true}>
                           Read Post

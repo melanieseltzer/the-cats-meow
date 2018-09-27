@@ -28,21 +28,27 @@ export default class Post extends Component {
               </div>
             );
 
+          const { id, title, body, createdAt, featuredImage } = post;
+
           return (
             <Container className="posts-container">
-              <Content className="post" key={post.id}>
-                <img
-                  className="post-image"
-                  src={post.featuredImage.url}
-                  alt={post.featuredImage.fileName}
-                />
+              <Content className="post" key={id}>
+                {featuredImage ? (
+                  <img
+                    className="post-image"
+                    src={featuredImage.url}
+                    alt={featuredImage.fileName}
+                  />
+                ) : (
+                  ''
+                )}
                 <Heading renderAs="h2" size={3}>
-                  {post.title}
+                  {title}
                 </Heading>
                 <Heading subtitle size={6} renderAs="h3" className="posted">
-                  Posted on {format(post.createdAt, ['dd MMMM yyyy'])}
+                  Posted on {format(createdAt, ['dd MMMM yyyy'])}
                 </Heading>
-                <Markdown source={post.body} />
+                <Markdown source={body} />
               </Content>
             </Container>
           );
