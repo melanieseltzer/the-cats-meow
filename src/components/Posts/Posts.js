@@ -14,13 +14,9 @@ import Loader from 'react-loader-spinner';
 import './Posts.css';
 
 export default class Posts extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      isDisabled: false
-    };
-  }
+  state = {
+    isDisabled: false
+  };
 
   render() {
     return (
