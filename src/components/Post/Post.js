@@ -33,21 +33,21 @@ export default class Post extends Component {
           return (
             <Container className="posts-container">
               <Content className="post" key={id}>
-                {featuredImage ? (
+                {featuredImage && (
                   <img
                     className="post-image"
                     src={featuredImage.url}
                     alt={featuredImage.fileName}
                   />
-                ) : (
-                  ''
                 )}
+
                 <Heading renderAs="h2" size={3}>
                   {title}
                 </Heading>
                 <Heading subtitle size={6} renderAs="h3" className="posted">
                   Posted on {format(createdAt, ['dd MMMM yyyy'])}
                 </Heading>
+
                 <Markdown source={body} />
               </Content>
             </Container>

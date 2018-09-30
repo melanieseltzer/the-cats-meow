@@ -46,14 +46,12 @@ export default class Posts extends Component {
                   return (
                     <Link to={`/post/${id}`} key={id}>
                       <Content>
-                        {featuredImage ? (
+                        {featuredImage && (
                           <img
                             className="post-image"
                             src={featuredImage.url}
                             alt={featuredImage.fileName}
                           />
-                        ) : (
-                          ''
                         )}
 
                         <Heading renderAs="h2" size={3}>
